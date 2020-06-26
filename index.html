@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script src="js/index.js"></script>
+        <table border="1" cellspacing="0" align="center">
+        <tr> <td>
+           <h1>Bem-Vindo!</h1>
+        <form name="frm1" method="POST" onsubmit="return(fvalidar())">
+            <table>
+                <tr> <td>Matrícula:</td></tr>
+                <tr> <td><input type="text" name='_matricula' size="50" maxlength="20"></td></tr>
+                <tr id="message1" style="visibility: hidden; position: absolute;"> <td style="color: red;">Campo obrigatório!</td></tr>
+
+                <tr> <td>Senha:</td></tr>
+                <tr> <td><input type="password" name='_senha' size="50" maxlength="20"></td></tr>
+                <tr id="message2" style="visibility: hidden; position: absolute;"> <td style="color: red;">Campo obrigatório!</td></tr>
+
+                <tr id="message3" style="visibility: hidden; position: absolute;"> <td style="color: red;">Matricula/Senha Incorretos!</td></tr>
+
+                <tr> <td style="text-align: center;"><button type="submit" name='_login'>Login</button></td></tr>
+            </table>
+        </form>
+        </td> </tr>
+        </table>
+
+    </body>
+</html>
